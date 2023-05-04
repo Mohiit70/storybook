@@ -323,7 +323,7 @@ async function doInitiate(options: CommandOptions, pkg: PackageJson): Promise<vo
 
     // Add a new line for the clear visibility.
     logger.log();
-    throw new HandledError(`Angular project already installed`);
+    throw new HandledError(`Project already inited with Storybook`);
   }
 
   const installResult = await installStorybook(projectType as ProjectType, packageManager, options);
